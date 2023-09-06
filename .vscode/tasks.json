@@ -1,0 +1,27 @@
+{	
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "Build",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		  "-std=c++0x",
+		  "-o",
+		  "make",
+		  "src/tictactoe.cpp",
+		  "main.cpp"
+		],
+		"group":{
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  },
+	  {
+		"label": "Run",
+		"type": "shell",
+		"command": "${fileDirname}/${fileBasenameNoExtension}"
+	  }
+	]
+}
+  
